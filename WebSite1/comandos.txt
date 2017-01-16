@@ -1,0 +1,26 @@
+Uma aplicação ASP tem um documento chamado GLOBAL.ASA onde são definidas variaveis a serem utilizadas na app
+
+Para criar uma função: "Sub nome " - "End Sub"
+
+For: For i = 0 to 2 .... Next - For Each 
+
+Chamar funcao : Call nome ()
+
+Pode-se criar cmds em qualquer contexto: em <% %> e em <SCRIPT LANGUAGE=VBScript RUNAT=Server> onde "<% %>" tem prioridade
+
+Contem estes objetos:
+	Application -> Metodos : Lock e Unlock (bloquear recursos temporariamente)
+
+	Session -> Variaveis: SessionID e Timeout | Metodos : Abandon (Logout)
+
+	Server -> Variaveis: ScriptTimeout (time para os scripts) | Metodos: CreateObject (cria um objeto Activex), HTMLEncode, URLEncode e MapPath(Mapear o diretorio com um arquivo) 
+
+	Request -> Pode chamar a coleção ou ele inteiro (Request("var") ou Request.colecao("var")) - Variaveis: QueryString(Valores do GET), Form (campos de um POST), ServerVariables(variaveis do CGI do server) Cookies e ClientCertificate
+
+	Response -> Variaveis: Buffer (Resposta automatica ou se sera armazenada em buffer), ContentType, Expires(tempo que ficará armazenada) e Status, Cookie: Response.Cookie('nome') (metodos: expire, path, domain). Metodos: AddHeader, BinaryWrite (Enviar algo, imagem ou som, para o usuario, deve ser informado o ContentType tambem), Clear, End, Flush, Redirect, Write.
+
+	
+
+A aplicação inicia no Application_OnStart e a sessão no Session_OnStart -> onde pode-se definir ações para iniciar
+
+len()
