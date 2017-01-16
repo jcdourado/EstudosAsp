@@ -4,6 +4,19 @@ Para criar uma função: "Sub nome " - "End Sub"
 
 For: For i = 0 to 2 .... Next - For Each 
 
+While: Do While ... Loop
+
+Case: Select Case "var" ..(Case "kkk","kke").. End Select
+
+FormatDateTime(Date,Tipo) - Tipo: 0 (Short Date), 1 (Long), 2 (Short), 3 (Painel de controle) e 4 (Hora em 24 horas)
+
+Pra confirmar check boxes tem que usar opc = "on"
+
+Includes :  <!--#include virtual="meu_arquivo.asp"-->
+			<!--#include file="meu_arquivo.asp"-->
+
+
+
 Chamar funcao : Call nome ()
 
 Pode-se criar cmds em qualquer contexto: em <% %> e em <SCRIPT LANGUAGE=VBScript RUNAT=Server> onde "<% %>" tem prioridade
@@ -19,7 +32,7 @@ Contem estes objetos:
 
 	Response -> Variaveis: Buffer (Resposta automatica ou se sera armazenada em buffer), ContentType, Expires(tempo que ficará armazenada) e Status, Cookie: Response.Cookie('nome') (metodos: expire, path, domain). Metodos: AddHeader, BinaryWrite (Enviar algo, imagem ou som, para o usuario, deve ser informado o ContentType tambem), Clear, End, Flush, Redirect, Write.
 
-	
+
 
 A aplicação inicia no Application_OnStart e a sessão no Session_OnStart -> onde pode-se definir ações para iniciar
 
